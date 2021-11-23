@@ -6,10 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.embed.swing.JFXPanel;
-import javafx.scene.media.AudioClip;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javax.swing.JOptionPane;
 
 
@@ -272,29 +268,12 @@ public class ZafariKids extends javax.swing.JFrame {
     }//GEN-LAST:event_jlblCebraMouseDragged
 
     private void jlblReproduccionMicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblReproduccionMicoMouseClicked
-       
-        
-        
-            
-            
-       
-        
-        
-        
-        
+      
         
     }//GEN-LAST:event_jlblReproduccionMicoMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        try {
-            
-        //new JFXPanel();
-        String pon = new File("leon.mp3").toURI().toString();
-        new MediaPlayer(new Media(pon)).play();
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
+
             
              
     }//GEN-LAST:event_jButton1ActionPerformed
