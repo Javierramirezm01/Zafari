@@ -65,8 +65,8 @@ public class ZafariKids extends javax.swing.JFrame {
         jlblSiluetaMico = new javax.swing.JLabel();
         jlblSiluetaTigre = new javax.swing.JLabel();
         jlblSiluetaCebra = new javax.swing.JLabel();
-        jlblReproduccionMico = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jlblInstrucciones = new javax.swing.JLabel();
+        jlblPistasMono = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Zafari Kids");
@@ -74,15 +74,15 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jlblPalmeraI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Palmera Lado Izquierdo.png"))); // NOI18N
         getContentPane().add(jlblPalmeraI);
-        jlblPalmeraI.setBounds(350, 140, 100, 500);
+        jlblPalmeraI.setBounds(350, 130, 100, 500);
 
         jlblPalmeraD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Palmera LadoDerecho.png"))); // NOI18N
         getContentPane().add(jlblPalmeraD);
-        jlblPalmeraD.setBounds(1270, 160, 100, 500);
+        jlblPalmeraD.setBounds(1270, 150, 100, 500);
 
         jlblArena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arena.png"))); // NOI18N
         getContentPane().add(jlblArena);
-        jlblArena.setBounds(350, 575, 1050, 150);
+        jlblArena.setBounds(350, 565, 1050, 150);
 
         jlblArbustosA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arbustos Arriba.png"))); // NOI18N
         getContentPane().add(jlblArbustosA);
@@ -98,11 +98,11 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jlblHoja3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas Laterales 2.png"))); // NOI18N
         getContentPane().add(jlblHoja3);
-        jlblHoja3.setBounds(1160, 540, 116, 123);
+        jlblHoja3.setBounds(1160, 530, 116, 123);
 
         jlblHoja4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas Laterales 2.png"))); // NOI18N
         getContentPane().add(jlblHoja4);
-        jlblHoja4.setBounds(400, 495, 116, 123);
+        jlblHoja4.setBounds(400, 485, 116, 123);
 
         jlblHoja5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas Laterales 1.png"))); // NOI18N
         getContentPane().add(jlblHoja5);
@@ -188,11 +188,11 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jlblSiluetaElefante.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Silueta Elefante.png"))); // NOI18N
         getContentPane().add(jlblSiluetaElefante);
-        jlblSiluetaElefante.setBounds(720, 550, 195, 143);
+        jlblSiluetaElefante.setBounds(720, 540, 195, 143);
 
         jlblSiluetaJirafa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Silueta Jirafa.png"))); // NOI18N
         getContentPane().add(jlblSiluetaJirafa);
-        jlblSiluetaJirafa.setBounds(950, 530, 195, 143);
+        jlblSiluetaJirafa.setBounds(950, 520, 195, 143);
 
         jlblSiluetaLeon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Silueta Leon.png"))); // NOI18N
         getContentPane().add(jlblSiluetaLeon);
@@ -204,30 +204,19 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jlblSiluetaTigre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Silueta Tigre.png"))); // NOI18N
         getContentPane().add(jlblSiluetaTigre);
-        jlblSiluetaTigre.setBounds(508, 495, 195, 143);
+        jlblSiluetaTigre.setBounds(508, 485, 195, 143);
 
         jlblSiluetaCebra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Cebra Silueta.png"))); // NOI18N
         getContentPane().add(jlblSiluetaCebra);
         jlblSiluetaCebra.setBounds(800, 300, 195, 143);
 
-        jlblReproduccionMico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reproduccion.png"))); // NOI18N
-        jlblReproduccionMico.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jlblReproduccionMico.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jlblReproduccionMicoMouseClicked(evt);
-            }
-        });
-        getContentPane().add(jlblReproduccionMico);
-        jlblReproduccionMico.setBounds(700, 280, 30, 30);
+        jlblInstrucciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Instrucciones.png"))); // NOI18N
+        getContentPane().add(jlblInstrucciones);
+        jlblInstrucciones.setBounds(1200, 710, 140, 50);
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(730, 270, 75, 22);
+        jlblPistasMono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
+        getContentPane().add(jlblPistasMono);
+        jlblPistasMono.setBounds(690, 260, 80, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -267,17 +256,6 @@ public class ZafariKids extends javax.swing.JFrame {
                 jlblCebra.getLocation().y + evt.getY() - jlblCebra.getHeight());
     }//GEN-LAST:event_jlblCebraMouseDragged
 
-    private void jlblReproduccionMicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblReproduccionMicoMouseClicked
-      
-        
-    }//GEN-LAST:event_jlblReproduccionMicoMouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-            
-             
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -314,7 +292,6 @@ public class ZafariKids extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jlblAguila;
     private javax.swing.JLabel jlblArbustosA;
     private javax.swing.JLabel jlblArena;
@@ -325,13 +302,14 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JLabel jlblHoja3;
     private javax.swing.JLabel jlblHoja4;
     private javax.swing.JLabel jlblHoja5;
+    private javax.swing.JLabel jlblInstrucciones;
     private javax.swing.JLabel jlblJirafa;
     private javax.swing.JLabel jlblLeon;
     private javax.swing.JLabel jlblLogo;
     private javax.swing.JLabel jlblMico;
     private javax.swing.JLabel jlblPalmeraD;
     private javax.swing.JLabel jlblPalmeraI;
-    private javax.swing.JLabel jlblReproduccionMico;
+    private javax.swing.JLabel jlblPistasMono;
     private javax.swing.JLabel jlblSiluetaAguila;
     private javax.swing.JLabel jlblSiluetaCebra;
     private javax.swing.JLabel jlblSiluetaElefante;
