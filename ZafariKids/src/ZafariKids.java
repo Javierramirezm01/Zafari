@@ -67,6 +67,7 @@ public class ZafariKids extends javax.swing.JFrame {
         jlblSiluetaCebra = new javax.swing.JLabel();
         jlblInstrucciones = new javax.swing.JLabel();
         jlblPistasMono = new javax.swing.JLabel();
+        jlblZafari = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Zafari Kids");
@@ -212,11 +213,21 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jlblInstrucciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Instrucciones.png"))); // NOI18N
         getContentPane().add(jlblInstrucciones);
-        jlblInstrucciones.setBounds(1200, 710, 140, 50);
+        jlblInstrucciones.setBounds(700, 710, 140, 50);
 
         jlblPistasMono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         getContentPane().add(jlblPistasMono);
         jlblPistasMono.setBounds(690, 260, 80, 30);
+
+        jlblZafari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Play.png"))); // NOI18N
+        jlblZafari.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlblZafari.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlblZafariMouseClicked(evt);
+            }
+        });
+        getContentPane().add(jlblZafari);
+        jlblZafari.setBounds(1200, 710, 140, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -255,6 +266,22 @@ public class ZafariKids extends javax.swing.JFrame {
          jlblCebra.setLocation(jlblCebra.getLocation().x + evt.getX() - jlblCebra.getWidth() /2,
                 jlblCebra.getLocation().y + evt.getY() - jlblCebra.getHeight());
     }//GEN-LAST:event_jlblCebraMouseDragged
+
+    private void jlblZafariMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblZafariMouseClicked
+            if(jlblMico.getX() >= 495 &&  + jlblMico.getX() <= 505 && jlblAguila.getX() >= 1030 &&  + jlblAguila.getX() <= 1037 && jlblElefante.getX() >= 715 &&  + jlblElefante.getX() <= 725&& jlblJirafa.getX() >= 945 &&  + jlblJirafa.getX() <= 955
+                    && jlblLeon.getX() >= 1095 &&  + jlblLeon.getX() <= 1105 && jlblTigre.getX() >= 503 &&  + jlblTigre.getX() <= 513 && jlblCebra.getX() >= 795 &&  + jlblCebra.getX() <= 805) {
+           JOptionPane.showMessageDialog(this, "Has ganado");
+          // jlblMico.setBounds(10, 10, 130, 110);
+           //jlblAguila.setBounds(-15, 180, 195, 143);
+           //jlblElefante.setBounds(165, 180, 130, 110);
+            // jlblJirafa.setBounds(10, 10, 130, 110);
+           //jlblLeon.setBounds(-10, 130, 150, 120);
+           //jlblTigre.setBounds(10, 370, 130, 110);
+           //jlblCebra.setBounds(10, 370, 130, 110);
+       }else{
+           JOptionPane.showMessageDialog(this, "Sigue intentando");
+        }
+    }//GEN-LAST:event_jlblZafariMouseClicked
 
     /**
      * @param args the command line arguments
@@ -318,5 +345,6 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JLabel jlblSiluetaMico;
     private javax.swing.JLabel jlblSiluetaTigre;
     private javax.swing.JLabel jlblTigre;
+    private javax.swing.JLabel jlblZafari;
     // End of variables declaration//GEN-END:variables
 }
