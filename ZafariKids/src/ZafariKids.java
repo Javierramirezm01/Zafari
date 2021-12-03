@@ -69,6 +69,7 @@ public class ZafariKids extends javax.swing.JFrame {
         jlblPistasMono = new javax.swing.JLabel();
         jlblZafari = new javax.swing.JLabel();
         jlblZafari1 = new javax.swing.JLabel();
+        jlblPistasElefante = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Zafari Kids");
@@ -245,6 +246,15 @@ public class ZafariKids extends javax.swing.JFrame {
         getContentPane().add(jlblZafari1);
         jlblZafari1.setBounds(950, 710, 150, 40);
 
+        jlblPistasElefante.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
+        jlblPistasElefante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlblPistasElefanteMouseClicked(evt);
+            }
+        });
+        getContentPane().add(jlblPistasElefante);
+        jlblPistasElefante.setBounds(740, 510, 80, 30);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -397,6 +407,10 @@ public class ZafariKids extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jlblZafari1MouseClicked
 
+    private void jlblPistasElefanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblPistasElefanteMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jlblPistasElefanteMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -450,6 +464,7 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JLabel jlblMico;
     private javax.swing.JLabel jlblPalmeraD;
     private javax.swing.JLabel jlblPalmeraI;
+    private javax.swing.JLabel jlblPistasElefante;
     private javax.swing.JLabel jlblPistasMono;
     private javax.swing.JLabel jlblSiluetaAguila;
     private javax.swing.JLabel jlblSiluetaCebra;
