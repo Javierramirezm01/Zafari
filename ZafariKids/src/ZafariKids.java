@@ -408,7 +408,7 @@ public class ZafariKids extends javax.swing.JFrame {
     }//GEN-LAST:event_jlblZafari1MouseClicked
 
     private void jlblPistasElefanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblPistasElefanteMouseClicked
-        // TODO add your handling code here:
+           JOptionPane.showMessageDialog(this, "es elanimla pesado bla bla ");
     }//GEN-LAST:event_jlblPistasElefanteMouseClicked
 
     /**
