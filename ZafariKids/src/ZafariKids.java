@@ -403,6 +403,8 @@ public class ZafariKids extends javax.swing.JFrame {
            //jlblTigre.setBounds(10, 370, 130, 110);
            //jlblCebra.setBounds(10, 370, 130, 110);
        }else{
+              SigueIntentando SI = new   SigueIntentando();
+              SI.setVisible(true);
            JOptionPane.showMessageDialog(this, "Sigue intentando");
         }
     }//GEN-LAST:event_jlblZafari1MouseClicked
